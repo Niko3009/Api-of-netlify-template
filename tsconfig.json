@@ -1,0 +1,24 @@
+{
+  "ts-node": {
+    "esm": true,
+    "experimentalSpecifierResolution": "node",
+    "transpileOnly": true,
+    "files": true
+  },
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "outDir": "dist",
+    "jsx": "react-jsx",
+    "baseUrl": "src",
+    "esModuleInterop": true,
+    "noImplicitAny": false,
+    "module": "ESNext",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@database/*": ["./src/database/*"]
+    }
+  },
+  "include": ["./src/"],
+  "exclude": ["node_modules"],
+  "module": "ES2020"
+}
